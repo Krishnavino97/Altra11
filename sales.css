@@ -1,0 +1,178 @@
+
+
+
+
+/*.............................. table ..................................................*/
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+  width: 100%;
+}
+
+table td, table th {
+ padding: 8px;
+}
+table tr:nth-child(even){background-color: #ddd;}
+
+table tr:hover {background-color: #f2f2f2;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4287f5;
+  color: white;
+ }
+
+/*................................. button ................................*/
+.button1{
+	border:1px solid #3498db;
+	background-color:green;
+	color:white;
+	height:30px;
+	width:60px;
+	border-radius:5px;
+	margin:0px;
+	transition:all 0.3s;
+}
+
+.button2:hover{
+	transform:scale(1.1);
+}
+.button1:hover{
+	transform:scale(1.1);
+}
+
+.button2{
+	border:1px solid #3498db;
+	background-color:#bf0b0e;
+	color:white;
+	height:30px;
+	width:60px;
+	border-radius:5px;
+	margin:0px;
+	transition:all 0.3s;
+}
+
+/*........................ container ...................................*/
+
+div.dashboard_container { 
+                margin:20px 10px;
+                padding:20px 20px;
+                background-color: #9fc2d1; 
+                width: 70%; 
+                height: 400px; 
+                overflow-x: hidden; 
+                overflow-y: auto; 
+                text-align:justify; 
+            } 
+			
+			
+/*......................... next/previous....................................*/ 
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #54ffff;
+  color: black;
+}
+
+.previous {
+  background-color: #9fcccc;
+  color: black;
+}
+
+.next {
+  background-color: #297575;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/*................................. arrange side by side...............*/
+.column {
+  float: left;
+  width: 70%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*....................... order tracking ...........................*/
+
+ol.progtrckr {
+    margin: 0;
+    padding: 0;
+    list-style-type none;
+}
+
+ol.progtrckr li {
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+ol.progtrckr[data-progtrckr-steps="2"] li { width: 49%; }
+ol.progtrckr[data-progtrckr-steps="3"] li { width: 33%; }
+ol.progtrckr[data-progtrckr-steps="4"] li { width: 24%; }
+ol.progtrckr[data-progtrckr-steps="5"] li { width: 19%; }
+ol.progtrckr[data-progtrckr-steps="6"] li { width: 16%; }
+ol.progtrckr[data-progtrckr-steps="7"] li { width: 14%; }
+ol.progtrckr[data-progtrckr-steps="8"] li { width: 12%; }
+ol.progtrckr[data-progtrckr-steps="9"] li { width: 11%; }
+
+ol.progtrckr li.progtrckr-done {
+    color: black;
+    border-bottom: 4px solid yellowgreen;
+}
+ol.progtrckr li.progtrckr-todo {
+    color: silver; 
+    border-bottom: 4px solid silver;
+}
+
+ol.progtrckr li:after {
+    content: "\00a0\00a0";
+}
+ol.progtrckr li:before {
+    position: relative;
+    bottom: -2.5em;
+    float: left;
+    left: 50%;
+    line-height: 1em;
+}
+ol.progtrckr li.progtrckr-done:before {
+    content: "\2713";
+    color: white;
+    background-color: yellowgreen;
+    height: 2.2em;
+    width: 2.2em;
+    line-height: 2.2em;
+    border: none;
+    border-radius: 2.2em;
+}
+ol.progtrckr li.progtrckr-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    font-size: 2.2em;
+    bottom: -1.2em;
+}
+
+.hh-grayBox {
+	background-color: #F8F8F8;
+	margin-bottom: 20px;
+	padding: 35px;
+	margin-top: 20px;
+}
