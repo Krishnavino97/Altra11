@@ -35,7 +35,7 @@
 <div class = "middlle">
 		<div class = "menu">
 		<li class = "item">
-				<a href = "supplier_dashboard.html" class = "button" target="supplier_content"> Products </a>
+				<a href = "sup_dash.php" class = "button" target="supplier_content"> Products </a>
 		</li>
 			
 			
@@ -61,12 +61,13 @@
 			</li>	
 			
 			<li class = "item">
-				<a href = "faq_userview.html" class = "button" target="supplier_content"> FAQs </a>
+				<a href = "faq_userview.php" class = "button" target="supplier_content"> FAQs </a>
 			</li>
 			
 			<li class = "item">
-				<a href = "logout.php" class = "button" target="supplier_content"> Logout </a>
-			</li>	
+				<a href = "../logout.php" class = "button" target = "back"> Logout </a>
+			</li>		
+			
 </div>
 </div>
 
