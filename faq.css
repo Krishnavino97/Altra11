@@ -1,0 +1,192 @@
+
+			
+			
+/*.........................arrange in row....................*/
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+}
+
+/*........................ faq......................*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body{
+background: #f6f6f6;
+}
+
+.box{
+width: 450px;
+margin: 20px auto;
+background: #fff;
+border-radius: 7px;
+box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+overflow-y:scroll;
+height:480px;
+}
+
+.box_feedback{
+width: 45%;
+margin: 20px auto;
+background: #fff;
+border-radius: 7px;
+box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+overflow-y:scroll;
+height:480px;
+}
+.box_post{
+width:65%;
+margin: 20px auto;
+background: #fff;
+border-radius: 7px;
+box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+overflow-y:scroll;
+height:480px;
+}
+
+.box .heading{
+background: #3d76fc;
+border-radius: 7px 7px 0px 0px;
+padding: 10px;
+color: #fff;
+text-align: center;
+font-family: right;
+width:100%;
+}
+
+.faqs{
+padding: 0px 2opx 20px;
+}
+
+::-webkit-details-marker{
+float: right;
+margin-top: 3px;
+}
+
+details{
+background: #f6f6f6;
+padding: 10px;
+border-radius: 7px;
+margin-top: 20px;
+font-family: "Rubik";
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+details summary{
+outline: none;
+}
+
+
+
+
+/*................................. form ........................*/
+
+
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+.form-style-6 h1{
+	background: #3d76fc;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+.form-style-6 textarea:focus
+{
+	box-shadow: 0 0 5px #3d76fc;
+	padding: 3%;
+	border: 1px solid #3d76fc;
+	width:100%;
+	height:100px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #3d76fc;
+	padding: 3%;
+	border: 1px solid #3d76fc;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #3d76fc;
+	border-radius:5px;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #3d76fc;
+}
+
+/*.................... button ....................*/
+.button_faq{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 60px;
+	padding: 5px;
+	background: #3d76fc;
+	border-radius:5px;
+	border-bottom: 2px solid #30C29E;
+	color: #fff;
+
+}
+
+.button_faq:hover{
+	background: #3d76fc;
+}

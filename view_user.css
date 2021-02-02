@@ -1,0 +1,168 @@
+/*........................ table container ......................*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body{
+background: #f6f6f6;
+}
+
+.box{
+width: 100%;
+margin: 5px auto;
+background: #daebe8;
+border-radius: 7px;
+box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+overflow:scroll;
+height:478px;
+}
+
+.box_feedback{
+width: 850px; /*change */
+margin: 5px auto;
+background: #daebe8;
+border-radius: 7px;
+box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+overflow:scroll;
+height:461px;
+}
+
+.box .heading{
+background: #3d76fc;
+border-radius: 7px 7px 0px 0px;
+padding: 10px;
+color: #fff;
+text-align: center;
+font-family: right;
+}
+.box_feedback .heading{
+background: #3d76fc;
+border-radius: 7px 7px 0px 0px;
+padding: 10px;
+color: #fff;
+text-align: center;
+font-family: right;
+}
+
+.faqs{
+padding: 0px 2opx 20px;
+}
+
+
+
+
+/*.........................arrange in row....................*/
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+}
+
+
+
+/*.......................... selection box ......................................*/
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 60px;
+	height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #cfd1d1 url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: #edf5f5;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+/*................. PDF .......................*/
+
+.pdf {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  font-size: 25px;
+  cursor: pointer;
+  width:105px;
+  height:40px;
+}
+
+.pdf:hover {
+  background-color: RoyalBlue;
+}
+
+/*....................... icon ..........................*/
+
+.icon{
+	height:25px;
+	width:30px;
+}
+
+
+/*.............................. table ..................................................*/
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4287f5;
+  color: white;
+ }
+ 
+ 
+/*................................. next, previous .....................*/
+a {
+   text-decoration: none;
+   display: inline-block;
+   padding: 0px;
+   font-size: 15px;
+   width: 10px;
+   text-align: center;
+   float:right;
+}
+.back:hover {
+   background-color: #ddd;
+   color: black;
+}
+.next:hover {
+   background-color: rgb(121, 37, 133);
+   color: white;
+}
+.back {
+   border-radius: 50%;
+   background-color: #acacac;
+   color: black;
+   float:right;
+}
+.next {
+   border-radius: 50%;
+   background-color: rgb(68, 30, 112);
+   color: white;
+   float:right;
+}
