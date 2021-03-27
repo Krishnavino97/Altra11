@@ -15,11 +15,10 @@ include "connection.php";
 </head>
 <body style = "background-color:#f2f2f2; margin:10px 10px 10px 10px;">
 <div class = "grid">
-.
 
 <div class="form-style-6">
 <h1>Add new questions</h1>
-<img src = "images/faq.png" height = "230px" width = "300px"></img>	
+<img src = "images/faq.png" height = "230px" width = "300px" style="margin-left:100px"></img>	
 
 <form method = "POST" action = "add_faq.php">
 <input type="text" name="question" placeholder="Enter the question" />
@@ -29,69 +28,9 @@ include "connection.php";
 
 </div>
 
-<?php 
-	include "connection.php";
 
-	$sql = "SELECT no, question, answer FROM faq";
-	$result = $conn->query($sql);
-
-?>
-
-
-
-<?php
-
-	
-	if ($result->num_rows > 0) {
-    ?>
-	
-	
-	
-<div class="box">
-	<p class="heading">FAQs</p>
-	<div class="faqs">
-	<?php
-	
-    // output data of each row
-	if ($result->num_rows > 0){
-    while($row = $result->fetch_assoc()) {
-		
-				$no = $row['no'];
-				$question = $row['question'];
-				$answer = $row['answer'];
-	?>
-	
-	   <details>
-	   <summary> <?php echo $question ?> </summary>
-       <p class="text"> <?php echo $answer ?> </p>
-	   <button class= "button_faq" onclick = "edit_faq.php?getID=<?php echo $no?>"> Update</button>
-	   <button class= "button_faq" onclick = "delete_faq.php?getID=<?php echo $no?>"> Delete</button>
-	   </details>
-	   <?php
-	}
-	?>
-	  
-	</div>
-	</div>
-	
-	<?php
-	}
-	?>
-	
-	<?php
-	}
-	
-
-	
- else {
-    echo "0 results";
-}
-
-$conn->close();
-?>
-
-<div style = "margin-top:60px;">
-<img src = "images/faq_user.png" height = "350px" width = "300px"></img>
+<div style = "margin-top:60px">
+<img src = "images/faq_add.png" height = "450px" width = "400"></img>
 </div>	
 	
 </body>
